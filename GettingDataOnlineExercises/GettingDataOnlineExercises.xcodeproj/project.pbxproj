@@ -17,6 +17,7 @@
 		81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */; };
 		81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */; };
 		81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040F1FCCC30E002DF8B4 /* Beer.swift */; };
+		81E104121FCCC5C3002DF8B4 /* BeerAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliAPIClient.swift; sourceTree = "<group>"; };
 		81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliFilm.swift; sourceTree = "<group>"; };
 		81E1040F1FCCC30E002DF8B4 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				81E1040F1FCCC30E002DF8B4 /* Beer.swift */,
+				81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */,
 			);
 			path = Beer;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */,
 				81E104061FCCAADD002DF8B4 /* StudioGhibliListViewController.swift in Sources */,
 				81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */,
+				81E104121FCCC5C3002DF8B4 /* BeerAPIClient.swift in Sources */,
 				81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */,
 				81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */,
 			);
