@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		81E103F11FCCA3DE002DF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E103F01FCCA3DE002DF8B4 /* AppDelegate.swift */; };
-		81E103F31FCCA3DE002DF8B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E103F21FCCA3DE002DF8B4 /* ViewController.swift */; };
 		81E103F61FCCA3DE002DF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E103F41FCCA3DE002DF8B4 /* Main.storyboard */; };
 		81E103F81FCCA3DE002DF8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E103F71FCCA3DE002DF8B4 /* Assets.xcassets */; };
 		81E103FB1FCCA3DE002DF8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E103F91FCCA3DE002DF8B4 /* LaunchScreen.storyboard */; };
+		81E104041FCCAABA002DF8B4 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104031FCCAABA002DF8B4 /* NetworkHelper.swift */; };
+		81E104061FCCAADD002DF8B4 /* StudioGhibliListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104051FCCAADD002DF8B4 /* StudioGhibliListViewController.swift */; };
+		81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104071FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift */; };
+		81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */; };
+		81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81E103ED1FCCA3DE002DF8B4 /* GettingDataOnlineExercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GettingDataOnlineExercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E103F01FCCA3DE002DF8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81E103F21FCCA3DE002DF8B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81E103F51FCCA3DE002DF8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81E103F71FCCA3DE002DF8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E103FA1FCCA3DE002DF8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E103FC1FCCA3DE002DF8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E104031FCCAABA002DF8B4 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		81E104051FCCAADD002DF8B4 /* StudioGhibliListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliListViewController.swift; sourceTree = "<group>"; };
+		81E104071FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliDetailViewController.swift; sourceTree = "<group>"; };
+		81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliAPIClient.swift; sourceTree = "<group>"; };
+		81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliFilm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				81E104021FCCA3EF002DF8B4 /* Unused Stuff */,
-				81E103F21FCCA3DE002DF8B4 /* ViewController.swift */,
 				81E103F41FCCA3DE002DF8B4 /* Main.storyboard */,
+				81E104031FCCAABA002DF8B4 /* NetworkHelper.swift */,
+				81E104091FCCAAED002DF8B4 /* Studio Ghibli */,
 				81E103F71FCCA3DE002DF8B4 /* Assets.xcassets */,
 				81E103FC1FCCA3DE002DF8B4 /* Info.plist */,
 			);
@@ -70,6 +79,17 @@
 				81E103F91FCCA3DE002DF8B4 /* LaunchScreen.storyboard */,
 			);
 			path = "Unused Stuff";
+			sourceTree = "<group>";
+		};
+		81E104091FCCAAED002DF8B4 /* Studio Ghibli */ = {
+			isa = PBXGroup;
+			children = (
+				81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */,
+				81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */,
+				81E104051FCCAADD002DF8B4 /* StudioGhibliListViewController.swift */,
+				81E104071FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift */,
+			);
+			path = "Studio Ghibli";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E103F31FCCA3DE002DF8B4 /* ViewController.swift in Sources */,
+				81E104041FCCAABA002DF8B4 /* NetworkHelper.swift in Sources */,
 				81E103F11FCCA3DE002DF8B4 /* AppDelegate.swift in Sources */,
+				81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */,
+				81E104061FCCAADD002DF8B4 /* StudioGhibliListViewController.swift in Sources */,
+				81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */,
+				81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
