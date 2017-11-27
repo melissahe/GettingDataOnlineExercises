@@ -16,6 +16,7 @@
 		81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104071FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift */; };
 		81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */; };
 		81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */; };
+		81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040F1FCCC30E002DF8B4 /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		81E104071FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliDetailViewController.swift; sourceTree = "<group>"; };
 		81E1040A1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliAPIClient.swift; sourceTree = "<group>"; };
 		81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliFilm.swift; sourceTree = "<group>"; };
+		81E1040F1FCCC30E002DF8B4 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				81E103F41FCCA3DE002DF8B4 /* Main.storyboard */,
 				81E104031FCCAABA002DF8B4 /* NetworkHelper.swift */,
 				81E104091FCCAAED002DF8B4 /* Studio Ghibli */,
+				81E1040E1FCCC130002DF8B4 /* Beer */,
 				81E103F71FCCA3DE002DF8B4 /* Assets.xcassets */,
 				81E103FC1FCCA3DE002DF8B4 /* Info.plist */,
 			);
@@ -90,6 +93,14 @@
 				81E104071FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift */,
 			);
 			path = "Studio Ghibli";
+			sourceTree = "<group>";
+		};
+		81E1040E1FCCC130002DF8B4 /* Beer */ = {
+			isa = PBXGroup;
+			children = (
+				81E1040F1FCCC30E002DF8B4 /* Beer.swift */,
+			);
+			path = Beer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */,
 				81E104061FCCAADD002DF8B4 /* StudioGhibliListViewController.swift in Sources */,
 				81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */,
+				81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */,
 				81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
