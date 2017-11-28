@@ -20,6 +20,9 @@
 		81E104121FCCC5C3002DF8B4 /* BeerAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */; };
 		81E104141FCCCE09002DF8B4 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104131FCCCE09002DF8B4 /* BeerListViewController.swift */; };
 		81E104161FCCCE14002DF8B4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104151FCCCE14002DF8B4 /* BeerDetailViewController.swift */; };
+		81E1041C1FCCEB24002DF8B4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1041B1FCCEB23002DF8B4 /* Currency.swift */; };
+		81E1041E1FCCEB38002DF8B4 /* CurrencyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1041D1FCCEB38002DF8B4 /* CurrencyAPIClient.swift */; };
+		81E104201FCCEFC5002DF8B4 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1041F1FCCEFC4002DF8B4 /* CurrencyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPIClient.swift; sourceTree = "<group>"; };
 		81E104131FCCCE09002DF8B4 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		81E104151FCCCE14002DF8B4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		81E1041B1FCCEB23002DF8B4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		81E1041D1FCCEB38002DF8B4 /* CurrencyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPIClient.swift; sourceTree = "<group>"; };
+		81E1041F1FCCEFC4002DF8B4 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 				81E104031FCCAABA002DF8B4 /* NetworkHelper.swift */,
 				81E104091FCCAAED002DF8B4 /* Studio Ghibli */,
 				81E1040E1FCCC130002DF8B4 /* Beer */,
+				81E1041A1FCCE911002DF8B4 /* Currency */,
 				81E103F71FCCA3DE002DF8B4 /* Assets.xcassets */,
 				81E103FC1FCCA3DE002DF8B4 /* Info.plist */,
 			);
@@ -110,6 +117,16 @@
 				81E104151FCCCE14002DF8B4 /* BeerDetailViewController.swift */,
 			);
 			path = Beer;
+			sourceTree = "<group>";
+		};
+		81E1041A1FCCE911002DF8B4 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				81E1041B1FCCEB23002DF8B4 /* Currency.swift */,
+				81E1041D1FCCEB38002DF8B4 /* CurrencyAPIClient.swift */,
+				81E1041F1FCCEFC4002DF8B4 /* CurrencyViewController.swift */,
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,12 +203,15 @@
 			files = (
 				81E104041FCCAABA002DF8B4 /* NetworkHelper.swift in Sources */,
 				81E103F11FCCA3DE002DF8B4 /* AppDelegate.swift in Sources */,
+				81E1041E1FCCEB38002DF8B4 /* CurrencyAPIClient.swift in Sources */,
 				81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */,
 				81E104141FCCCE09002DF8B4 /* BeerListViewController.swift in Sources */,
 				81E104061FCCAADD002DF8B4 /* StudioGhibliListViewController.swift in Sources */,
 				81E104161FCCCE14002DF8B4 /* BeerDetailViewController.swift in Sources */,
+				81E1041C1FCCEB24002DF8B4 /* Currency.swift in Sources */,
 				81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */,
 				81E104121FCCC5C3002DF8B4 /* BeerAPIClient.swift in Sources */,
+				81E104201FCCEFC5002DF8B4 /* CurrencyViewController.swift in Sources */,
 				81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */,
 				81E1040B1FCCAC63002DF8B4 /* StudioGhibliAPIClient.swift in Sources */,
 			);

@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-233"/>
+            <point key="canvasLocation" x="1660" y="-849"/>
         </scene>
         <!--Studio Ghibli Detail View Controller-->
         <scene sceneID="exV-EN-DJD">
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mcy-mO-WpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="-233"/>
+            <point key="canvasLocation" x="2337" y="-849"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OCu-XP-g6e">
@@ -164,6 +164,7 @@
                     <connections>
                         <segue destination="bGu-HD-xhs" kind="relationship" relationship="viewControllers" id="k4T-Xb-dGm"/>
                         <segue destination="TdM-sa-YhW" kind="relationship" relationship="viewControllers" id="hZX-SE-LTG"/>
+                        <segue destination="TG0-eG-DWC" kind="relationship" relationship="viewControllers" id="5df-0h-z8d"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRd-FT-vwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -234,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqk-kf-yu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="601"/>
+            <point key="canvasLocation" x="1660" y="-15"/>
         </scene>
         <!--Beer Detail View Controller-->
         <scene sceneID="fzK-XU-XOn">
@@ -304,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G89-pn-OSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="600"/>
+            <point key="canvasLocation" x="2337" y="-16"/>
         </scene>
         <!--Studio Ghibli-->
         <scene sceneID="Ifn-IN-kTN">
@@ -323,7 +324,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38e-2g-Y0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670.39999999999998" y="-232.08395802098951"/>
+            <point key="canvasLocation" x="974" y="-848"/>
         </scene>
         <!--Beer-->
         <scene sceneID="fYa-Fi-NrD">
@@ -342,7 +343,74 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0g-5W-tBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="601"/>
+            <point key="canvasLocation" x="974" y="-15"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="DcY-TC-TdW">
+            <objects>
+                <viewController id="TG0-eG-DWC" customClass="CurrencyViewController" customModule="GettingDataOnlineExercises" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SrW-qh-Caf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g05-CM-EVg">
+                                <rect key="frame" x="0.0" y="211" width="375" height="216"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ML-xo-CXF">
+                                <rect key="frame" x="100" y="528" width="29" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-1M-gra">
+                                <rect key="frame" x="100" y="80.5" width="29" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currencyOneLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at9-1d-Xb6">
+                                <rect key="frame" x="134" y="85" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currencyTwoLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feo-a3-0xo">
+                                <rect key="frame" x="135.5" y="532" width="139.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="feo-a3-0xo" firstAttribute="trailing" secondItem="wnj-3H-Q81" secondAttribute="trailing" constant="-100" id="7Pp-mP-t0u"/>
+                            <constraint firstItem="wnj-3H-Q81" firstAttribute="trailing" secondItem="at9-1d-Xb6" secondAttribute="trailing" constant="100" id="D5F-t9-daV"/>
+                            <constraint firstItem="qLa-1M-gra" firstAttribute="centerY" secondItem="wnj-3H-Q81" secondAttribute="centerY" multiplier="0.3" id="Jd8-Ue-zg6"/>
+                            <constraint firstItem="qLa-1M-gra" firstAttribute="leading" secondItem="wnj-3H-Q81" secondAttribute="leading" constant="100" id="Jt9-vO-Yah"/>
+                            <constraint firstItem="2ML-xo-CXF" firstAttribute="leading" secondItem="wnj-3H-Q81" secondAttribute="leading" constant="100" id="Pcr-rQ-6uD"/>
+                            <constraint firstItem="g05-CM-EVg" firstAttribute="trailing" secondItem="wnj-3H-Q81" secondAttribute="trailing" id="Z92-ir-M36"/>
+                            <constraint firstItem="at9-1d-Xb6" firstAttribute="centerY" secondItem="qLa-1M-gra" secondAttribute="centerY" id="eTW-8V-6b6"/>
+                            <constraint firstItem="2ML-xo-CXF" firstAttribute="centerY" secondItem="wnj-3H-Q81" secondAttribute="centerY" multiplier="1.7" id="fWb-Mx-c32"/>
+                            <constraint firstItem="at9-1d-Xb6" firstAttribute="leading" secondItem="qLa-1M-gra" secondAttribute="trailing" constant="5" id="tqz-2P-o0j"/>
+                            <constraint firstItem="feo-a3-0xo" firstAttribute="centerY" secondItem="2ML-xo-CXF" secondAttribute="centerY" id="uvf-y6-a5C"/>
+                            <constraint firstItem="feo-a3-0xo" firstAttribute="leading" secondItem="2ML-xo-CXF" secondAttribute="trailing" constant="5" id="vOt-gC-YU9"/>
+                            <constraint firstItem="g05-CM-EVg" firstAttribute="centerY" secondItem="wnj-3H-Q81" secondAttribute="centerY" id="vvL-oO-jUC"/>
+                            <constraint firstItem="g05-CM-EVg" firstAttribute="leading" secondItem="wnj-3H-Q81" secondAttribute="leading" id="zCI-Sd-CTA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wnj-3H-Q81"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Currency" id="Kag-tu-0sG"/>
+                    <connections>
+                        <outlet property="currencyOneLabel" destination="at9-1d-Xb6" id="F73-ID-WQH"/>
+                        <outlet property="currencyOneTextField" destination="qLa-1M-gra" id="5XQ-bC-7NZ"/>
+                        <outlet property="currencyPickerView" destination="g05-CM-EVg" id="I2n-6a-Ver"/>
+                        <outlet property="currencyTwoLabel" destination="feo-a3-0xo" id="i6s-Yy-1k2"/>
+                        <outlet property="currencyTwoTextFIeld" destination="2ML-xo-CXF" id="Zye-dS-Kb3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elV-B7-WyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="858.62068965517244"/>
         </scene>
     </scenes>
 </document>
