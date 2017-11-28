@@ -18,14 +18,14 @@ class Currency {
     }
     
     convenience init?(from currencyDict: [String : Any]) {
-        guard let base = currencyDict["base"] else {
+        guard let base = currencyDict["base"] as? String else {
             print("base didn't work")
-            return
+            return nil
         }
         
-        guard let rates = currencyDict["rates"] else {
+        guard let rates = currencyDict["rates"] as? [String : Any] else {
             print("rates didn't work")
-            return
+            return nil
         }
         
         self.init(base: base, rates: rates)
