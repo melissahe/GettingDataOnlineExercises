@@ -26,7 +26,7 @@ class StudioGhibliListViewController: UIViewController {
         
         StudioGhibliAPIClient.manager.getMovies(
             from: urlStr,
-            completionHandler: { (studioGhibliFilmArray: [StudioGhibliFilm]) in
+            completionHandler: {(studioGhibliFilmArray: [StudioGhibliFilm]) in
                 self.studioGhibliFilms = studioGhibliFilmArray
                 
                 DispatchQueue.main.async {

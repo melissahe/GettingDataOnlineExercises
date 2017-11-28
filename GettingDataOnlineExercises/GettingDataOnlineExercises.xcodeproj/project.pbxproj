@@ -18,6 +18,8 @@
 		81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */; };
 		81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1040F1FCCC30E002DF8B4 /* Beer.swift */; };
 		81E104121FCCC5C3002DF8B4 /* BeerAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */; };
+		81E104141FCCCE09002DF8B4 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104131FCCCE09002DF8B4 /* BeerListViewController.swift */; };
+		81E104161FCCCE14002DF8B4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E104151FCCCE14002DF8B4 /* BeerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		81E1040C1FCCAC73002DF8B4 /* StudioGhibliFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioGhibliFilm.swift; sourceTree = "<group>"; };
 		81E1040F1FCCC30E002DF8B4 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPIClient.swift; sourceTree = "<group>"; };
+		81E104131FCCCE09002DF8B4 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		81E104151FCCCE14002DF8B4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			children = (
 				81E1040F1FCCC30E002DF8B4 /* Beer.swift */,
 				81E104111FCCC5C3002DF8B4 /* BeerAPIClient.swift */,
+				81E104131FCCCE09002DF8B4 /* BeerListViewController.swift */,
+				81E104151FCCCE14002DF8B4 /* BeerDetailViewController.swift */,
 			);
 			path = Beer;
 			sourceTree = "<group>";
@@ -181,7 +187,9 @@
 				81E104041FCCAABA002DF8B4 /* NetworkHelper.swift in Sources */,
 				81E103F11FCCA3DE002DF8B4 /* AppDelegate.swift in Sources */,
 				81E104081FCCAAE8002DF8B4 /* StudioGhibliDetailViewController.swift in Sources */,
+				81E104141FCCCE09002DF8B4 /* BeerListViewController.swift in Sources */,
 				81E104061FCCAADD002DF8B4 /* StudioGhibliListViewController.swift in Sources */,
+				81E104161FCCCE14002DF8B4 /* BeerDetailViewController.swift in Sources */,
 				81E1040D1FCCAC73002DF8B4 /* StudioGhibliFilm.swift in Sources */,
 				81E104121FCCC5C3002DF8B4 /* BeerAPIClient.swift in Sources */,
 				81E104101FCCC30E002DF8B4 /* Beer.swift in Sources */,
