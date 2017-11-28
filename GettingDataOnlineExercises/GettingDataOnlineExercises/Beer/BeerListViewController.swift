@@ -70,14 +70,21 @@ class BeerListViewController: UIViewController {
     
     //Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if
-            let cell = sender as? UITableViewCell,
-            let selectedIndexPath = beerTableView.indexPath(for: cell),
-            let destinationVC = segue.destination as? BeerDetailViewController {
-            let beersInSection = getBeersInSection(section: selectedIndexPath.section)
-            let selectedBeer = (filteringIsOn) ? beerList[selectedIndexPath.row] : beersInSection[selectedIndexPath.row]
-            //to do
-         }
+         guard let cell = sender as? UITableViewCell else {
+            return
+        }
+        
+        guard let selectedIndexPath = beerTableView.indexPath(for: cell) else {
+            return
+        }
+        
+        guard let destinationVC = segue.destination as? BeerDetailViewController else {
+            return
+        }
+        
+        let beersInSection = getBeersInSection(section: selectedIndexPath.section)
+        let selectedBeer = (filteringIsOn) ? beerList[selectedIndexPath.row] : beersInSection[selectedIndexPath.row]
+        destinationVC.beer = selectedBeer
     }
 }
 
@@ -89,9 +96,7 @@ extension BeerListViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        let beersInSection = getBeersInSection(section: indexPath.section)
-        
-        let selectedCell = (filteringIsOn) ? beerList[indexPath.row] : beersInSection[indexPath.row]
+        let selectedCell = tableView.cellForRow(at: indexPath)
         
         performSegue(withIdentifier: "detailedSegue", sender: selectedCell)
     }

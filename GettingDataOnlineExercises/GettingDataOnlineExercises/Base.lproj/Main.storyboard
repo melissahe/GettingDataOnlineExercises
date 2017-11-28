@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -242,9 +243,64 @@
                     <view key="view" contentMode="scaleToFill" id="W3u-yc-Wkx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-qa-bDM">
+                                <rect key="frame" x="120" y="64" width="135" height="221.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQy-Sm-8rK">
+                                <rect key="frame" x="145" y="315.5" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abvLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhF-dt-muh">
+                                <rect key="frame" x="152" y="355" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wc-rn-VLT">
+                                <rect key="frame" x="16" y="401" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3SN-oF-4CF">
+                                <rect key="frame" x="67" y="445" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zgf-qa-bDM" firstAttribute="top" secondItem="ezD-Vy-Noo" secondAttribute="top" id="2Je-S7-H7G"/>
+                            <constraint firstItem="Zgf-qa-bDM" firstAttribute="height" secondItem="ezD-Vy-Noo" secondAttribute="height" multiplier="0.4" id="7Tb-ox-dvs"/>
+                            <constraint firstItem="3SN-oF-4CF" firstAttribute="leading" secondItem="ezD-Vy-Noo" secondAttribute="leading" constant="67" id="8zE-oC-kDY"/>
+                            <constraint firstItem="ezD-Vy-Noo" firstAttribute="bottom" secondItem="3SN-oF-4CF" secondAttribute="bottom" constant="45" id="B4Z-vN-d0J"/>
+                            <constraint firstItem="ezD-Vy-Noo" firstAttribute="trailing" secondItem="8wc-rn-VLT" secondAttribute="trailing" constant="271" id="Nef-je-EwP"/>
+                            <constraint firstItem="ezD-Vy-Noo" firstAttribute="trailing" secondItem="3SN-oF-4CF" secondAttribute="trailing" constant="68" id="QdB-UW-YX2"/>
+                            <constraint firstItem="vhF-dt-muh" firstAttribute="leading" secondItem="ezD-Vy-Noo" secondAttribute="leading" constant="152" id="TjW-Xi-Ldd"/>
+                            <constraint firstItem="ezD-Vy-Noo" firstAttribute="trailing" secondItem="LQy-Sm-8rK" secondAttribute="trailing" constant="146" id="cDS-9d-dmk"/>
+                            <constraint firstItem="vhF-dt-muh" firstAttribute="top" secondItem="LQy-Sm-8rK" secondAttribute="bottom" constant="18.5" id="gXr-DU-GCg"/>
+                            <constraint firstItem="8wc-rn-VLT" firstAttribute="leading" secondItem="ezD-Vy-Noo" secondAttribute="leading" constant="16" id="icr-mm-a3f"/>
+                            <constraint firstItem="ezD-Vy-Noo" firstAttribute="trailing" secondItem="Zgf-qa-bDM" secondAttribute="trailing" constant="120" id="mJA-YO-nVr"/>
+                            <constraint firstItem="LQy-Sm-8rK" firstAttribute="leading" secondItem="ezD-Vy-Noo" secondAttribute="leading" constant="145" id="oe4-fr-Wui"/>
+                            <constraint firstItem="8wc-rn-VLT" firstAttribute="top" secondItem="vhF-dt-muh" secondAttribute="bottom" constant="25" id="p3d-Bt-KRz"/>
+                            <constraint firstItem="Zgf-qa-bDM" firstAttribute="leading" secondItem="ezD-Vy-Noo" secondAttribute="leading" constant="120" id="s99-bO-ln7"/>
+                            <constraint firstItem="3SN-oF-4CF" firstAttribute="top" secondItem="8wc-rn-VLT" secondAttribute="bottom" constant="23" id="txu-o5-7En"/>
+                            <constraint firstItem="LQy-Sm-8rK" firstAttribute="top" secondItem="Zgf-qa-bDM" secondAttribute="bottom" constant="30" id="zeY-uv-035"/>
+                            <constraint firstItem="ezD-Vy-Noo" firstAttribute="trailing" secondItem="vhF-dt-muh" secondAttribute="trailing" constant="153" id="zpx-0j-Z2N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ezD-Vy-Noo"/>
                     </view>
+                    <connections>
+                        <outlet property="abvLabel" destination="vhF-dt-muh" id="H04-73-b58"/>
+                        <outlet property="beerImageView" destination="Zgf-qa-bDM" id="ZUr-tq-doW"/>
+                        <outlet property="descriptionTextView" destination="3SN-oF-4CF" id="nVc-RH-NbU"/>
+                        <outlet property="nameLabel" destination="LQy-Sm-8rK" id="DWz-ih-7eA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G89-pn-OSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
